@@ -1,0 +1,207 @@
+html, body {
+    margin: 0%;
+    font-family: 'Roboto', sans-serif;
+    color: #393D3F;
+
+}
+.header {
+    background-color: #393D3F;
+}
+.header a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    height: 70px;
+    width: 70px;
+    margin-right: 20px;
+    animation: shake 5s cubic-bezier(.36,.07,.19,.97) infinite;
+}
+
+.titulo-proyecto {
+    color: beige;
+    font-size: 28px;
+}
+.nav {
+    background-color: #f6f0ed;
+    padding: 10px;
+    position: relative;
+}
+
+.elementos-menu {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.elementos-menu a {
+    text-decoration: none;
+    color: #877C78;
+    padding: 7px 0;
+    transition: color .3s;
+}
+.elementos-menu a:hover {
+    color: #E76D83;
+    transition: color .3s;
+}
+
+.agregar-proyecto {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #393D3F;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    color: beige;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.agregar-proyecto:hover {
+    transform: scale(1.5);
+    transition: transform .3s;
+}
+
+.agregar-proyecto span {
+    position: relative;
+    top: -2px;
+}   
+.dashboard, .tablero {
+    padding: 10px;
+}
+
+.titulo-dashboard {
+    text-align: center;
+}
+.tarjetas-dashboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.tarjeta-dashboard {
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    transition: transform .3s;
+}
+
+.tarjeta-dashboard:hover {
+    transform: scale(1.1);
+    z-index: 100;
+    transition: transform .3s;
+}
+
+.card.tarjeta-dashboard .card-body {
+    padding: 0px;
+}
+
+.tarjeta-dashboard img {
+    width: 100%;
+    height: 200px;
+    border-radius: 4px 4px;
+    object-fit: cover;
+}
+
+.tarjeta-dashboard p {
+    padding: 5px 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer .enlaces-internos {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+footer .enlaces-internos a {
+    color: #E76D83;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+footer .enlaces-internos a:hover {
+    color: #393D3F;
+    transition: color .3s;
+}
+
+.tablero {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.estado-tablero {
+    height: 75vh;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    padding: 10px;
+}
+
+.estado-titulo {
+    font-size: 12px;
+    border-bottom: 1px solid #393D3F;
+}
+.tarea {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    padding: 5px;
+    margin: 5px 0 0;
+    border: 1px solid #877C78;
+    transition: border .3s;
+}
+
+.tarea:hover {
+    border: 1px solid #E76D83;
+    transition: border .3s;
+}
+
+.titulo-tarea {
+    font-size: 14px;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.persona-asignada {
+    font-size: 12px;
+    align-self: flex-end;
+    background-color: #9CC4B2;
+    padding: 2PX 4PX;
+    border-radius: 4px;
+}
+
+h3.text-info {
+    color: #393D3F !important;
+}
+
+@keyframes shake {
+    5%, 25% {
+      transform: rotate(30deg);
+    }
+    
+    10%, 40% {
+      transform: rotate(-25deg);
+    }
+  
+    15%, 25%, 35% {
+      transform: rotate(20deg);
+    }
+  
+    20%, 30% {
+      transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+}
